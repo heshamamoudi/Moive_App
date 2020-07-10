@@ -1,0 +1,38 @@
+/* navigation bar  css */
+.nav {
+  background: #fffbd5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #b20a2c,
+    #fffbd5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #b20a2c,
+    #fffbd5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#basic-navbar-nav {
+  color: white;
+}
+#link {
+  color: white;
+}
+#link-1 {
+  color: white;
+
+  background: #ff9966; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff5e62,
+    #ff9966
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff5e62,
+    #ff9966
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#link-1:hover {
+  background: black;
+}

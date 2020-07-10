@@ -1,17 +1,4 @@
-
-body{
-  background-color: rgb(0, 0, 0);
-  color: aliceblue;
-}
-
-/* navigation bar  css */
-.nav{
-  background: rgb(107, 107, 107);
-  
-}
-#basic-navbar-nav{
-  color: white  ;
-}
-#link{
-  color: white;
+body {
+  background-color: rgb(0, 0, 0) !important;
+  color: aliceblue !important;
 }

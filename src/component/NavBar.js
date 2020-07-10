@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
-
+import "./Nav.css";
+import Search from "./Search";
 class NavBar extends Component {
   constructor() {
     super();
@@ -10,17 +11,18 @@ class NavBar extends Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
-  handleChange(event) {
-    this.setState({ searchStatement: event.target.value });
-  }
+  handleChange = async function (event) {
+    await this.setState({ searchStatement: event.target.value });
+  };
 
   handleSubmit() {
-    console.log(this.state.searchStatement);
+    let searchStatement = this.state.searchStatement;
+    return <Search Statement={searchStatement} />;
   }
 
   render() {
     return (
-      <Navbar className="nav" expand="lg">
+      <Navbar className="nav" expand="md">
         <Navbar.Brand id="link" href="/Popular">
           Movies-App
         </Navbar.Brand>
@@ -37,14 +39,15 @@ class NavBar extends Component {
           <Form inline>
             <FormControl
               id="feedback"
-              type="text"
+              type="Search"
               placeholder="Search"
               className="mr-sm-2"
               onChange={this.handleChange}
             />
             <Button
-              id="link"
+              id="link-1"
               variant="outline-info"
+              //there is an error and need to be fixed!
               onClick={this.handleSubmit}
             >
               Search
