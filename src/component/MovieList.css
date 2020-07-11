@@ -4,12 +4,13 @@
 }
 #col-1 {
   border: rgb(151, 7, 50) solid;
+  
   border-radius: 6px rgb(143, 40, 40);
   text-decoration: rgb(143, 40, 40) underline;
   text-align: center;
   padding-top: 100px;
   border-left: 0px;
-  background: black; 
+  
   
  
  
@@ -21,7 +22,7 @@
   text-align: center;
   padding-top: 100px;
   padding-bottom: 0px;
-  background: black; 
+  
   
 
 }
@@ -41,13 +42,15 @@
   border-right: 0px;
   text-align: center;
   padding-top: 90px;
-  background: black; 
+  
   
 
 }
-img:hover{
+#col-pic:hover{
 border: rgb(60, 141, 165) 1px solid;
 cursor: pointer;
+border-collapse: collapse;
+
 }
 @media only screen and (max-width: 1200px) {
     img:hover{
@@ -72,6 +75,7 @@ cursor: pointer;
         font-size: 10px;
         background: unset;
         border: lightblue 2px solid;
+        
         
       }
       #col {

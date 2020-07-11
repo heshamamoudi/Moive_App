@@ -8,20 +8,21 @@ class Search extends React.Component {
       movies: [],
       Pages: 1,
       maxPages: 0,
-      SearchState: "spider",
+      // SearchState: this.props.SearchState,
     };
     this.api = "aa63da3e1c35587ca73079e2c2d90101";
-    this.getPopularMovies = this.getPopularMovies.bind(this);
+    this.getSearchMovies = this.getSearchMovies.bind(this);
   }
-  
+
   getUrl() {
     //  return `https://api.themoviedb.org/3/search/movie?api_key=${this.apiKey}&query=${SearchState}`;
   }
-  //   this method is made to fetch and get the api components also the promises where (.then ) starts
+
   componentDidMount() {
-    this.getPopularMovies();
+    this.getSearchMovies();
   }
-  getPopularMovies = async function () {
+  getSearchMovies = async function () {
+    await this.setState({ Pages: this.state.Pages + 1 });
     await fetch(this.getUrl(), {
       method: "GET",
       headers: {
@@ -43,9 +44,8 @@ class Search extends React.Component {
     return (
       <div className="body">
         <div>
-          <h1 style={{ textAlign: "relative" }}>Popular</h1>
+          <h1 >{this.state.SearchState}</h1>
         </div>
-
         <MoviesList movies={this.state.movies} />
       </div>
     );
