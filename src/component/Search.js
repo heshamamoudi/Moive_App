@@ -8,14 +8,16 @@ class Search extends React.Component {
       movies: [],
       Pages: 1,
       maxPages: 0,
-      // SearchState: this.props.SearchState,
+      SearchState: "spider",
     };
     this.api = "aa63da3e1c35587ca73079e2c2d90101";
     this.getSearchMovies = this.getSearchMovies.bind(this);
+    
   }
 
   getUrl() {
-    //  return `https://api.themoviedb.org/3/search/movie?api_key=${this.apiKey}&query=${SearchState}`;
+    
+     return `https://api.themoviedb.org/3/search/movie?api_key=${this.api}&query=${this.state.SearchState}`;
   }
 
   componentDidMount() {
@@ -31,7 +33,7 @@ class Search extends React.Component {
       },
     }).then((result) => {
       result.json().then((resp) => {
-        console.log(resp.results);
+        
         this.setState({
           movies: [...resp.results],
           maxPages: resp.total_pages,
