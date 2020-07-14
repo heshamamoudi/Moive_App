@@ -1,0 +1,13 @@
+.body {
+  margin-top: 100px !important;
+}
+
+.input {
+  width: 20%;
+  border: white solid;
+  border-radius: 10px;
+  text-align: center;
+}
+#form {
+  text-align: center;
+}

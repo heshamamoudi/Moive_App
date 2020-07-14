@@ -1,7 +1,21 @@
 .bodyC {
   text-align: relative;
+  margin-top: 100px !important;
 }
-.bodyC > h1 {
+.start {
+  margin-bottom: 10px;
+  border: 0px solid black;
+  border-radius: 6px;
+  box-shadow: black;
+  color: white;
+  background: #ff9966; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff5e62,
+    #ff9966
+  ); /* Chrome 10-25, Safari 5.1-6 */
+}
+Link > h1 {
   color: rgb(151, 7, 50);
   margin-left: 5rem;
   text-decoration: white underline;
@@ -29,7 +43,40 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.popularBt {
+  position: relative;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border: 0px solid black;
+  border-radius: 6px;
+  box-shadow: black;
+  color: white;
+  background: #ff9966; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);
+}
+.favBt {
+  position: relative;
+  margin-bottom: 10px;
+  border: 0px solid black;
+  border-radius: 6px;
+  box-shadow: black;
+  color: white;
+  background: #ff9966; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);
+}
 .moreB > button:hover {
+  background: white;
+  color: black;
+}
+.start:hover {
+  background: white;
+  color: black;
+}
+.popularBt:hover {
+  background: white;
+  color: black;
+}
+.favBt:hover {
   background: white;
   color: black;
 }

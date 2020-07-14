@@ -1,19 +1,18 @@
 #row {
   padding-bottom: 10px;
-  
+}
+#imgSize {
+  width: 185px;
+  height: 260px;
 }
 #col-1 {
   border: rgb(151, 7, 50) solid;
-  
+
   border-radius: 6px rgb(143, 40, 40);
   text-decoration: rgb(143, 40, 40) underline;
   text-align: center;
   padding-top: 100px;
   border-left: 0px;
-  
-  
- 
- 
 }
 #col-2 {
   border: rgb(151, 7, 50) solid;
@@ -22,66 +21,57 @@
   text-align: center;
   padding-top: 100px;
   padding-bottom: 0px;
-  
-  
-
 }
 #col-pic {
-  border:  rgb(151, 7, 50) solid;
+  border: rgb(151, 7, 50) solid;
   border-radius: 6px rgb(143, 40, 40);
   border-right: 0px;
   padding-bottom: 0px;
-  
 }
 #col {
-    font-size: 13px;
-  text-decoration:  rgb(143, 40, 40) underline;
+  font-size: 13px;
+  text-decoration: rgb(143, 40, 40) underline;
   border: rgb(151, 7, 50) solid;
   border-radius: 6px rgb(143, 40, 40);
   border-left: 0px;
   border-right: 0px;
   text-align: center;
   padding-top: 90px;
-  
-  
-
 }
-#col-pic:hover{
-border: rgb(60, 141, 165) 1px solid;
-cursor: pointer;
-border-collapse: collapse;
-
+#col-pic:hover {
+  border: rgb(60, 141, 165) 1px solid;
+  cursor: pointer;
+  border-collapse: collapse;
+}
+#like {
+  color: red;
+  background-color: rgb(159, 183, 248);
 }
 @media only screen and (max-width: 1200px) {
-    img:hover{
-        position: 2rem;
-        border: rgb(235, 166, 76) 3px solid;
-        cursor: pointer;
-        }
-    #col-1 {
-        position:2rem ;
-       font-size: 10px;
-        border: unset;
-        background: unset;
-        border: lightblue 2px solid;
-      }
-      #col-2 {
-        
-        display:none;
-      }
-      #col-pic {
-        position:2rem ;
-        border: unset;
-        font-size: 10px;
-        background: unset;
-        border: lightblue 2px solid;
-        
-        
-      }
-      #col {
-        
-        display: none;
-        border: lightblue 2px solid;
-      
-      } 
+  img:hover {
+    position: 2rem;
+    border: rgb(235, 166, 76) 3px solid;
+    cursor: pointer;
   }
+  #col-1 {
+    position: 2rem;
+    font-size: 10px;
+    border: unset;
+    background: unset;
+    border: lightblue 2px solid;
+  }
+  #col-2 {
+    border: lightblue 2px solid;
+  }
+  #col-pic {
+    position: 2rem;
+    border: unset;
+    font-size: 10px;
+    background: unset;
+    border: lightblue 2px solid;
+  }
+  #col {
+    display: none;
+    border: lightblue 2px solid;
+  }
+}

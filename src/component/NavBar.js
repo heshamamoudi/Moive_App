@@ -1,54 +1,35 @@
-import React, { Component } from "react";
-import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
+import React from "react";
+import { Navbar, Nav, Button } from "react-bootstrap";
 import "./Nav.css";
-import Search from "./Search";
+import { Link } from "react-router-dom";
 
-class NavBar extends Component {
+class NavBar extends React.Component {
   constructor() {
     super();
     this.state = {
       searchStatement: "",
     };
-    this.handleChange = this.handleChange.bind(this);
-    
   }
-  handleChange = async function (event) {
-    await this.setState({ searchStatement: event.target.value });
-  };
-
-  
 
   render() {
     return (
-      <Navbar className="nav" expand="md">
+      <Navbar className="nav fixed-top mb-5" expand="md">
         <Navbar.Brand id="link" href="/Popular">
           Movies-App
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link id="link" href="/Tv-Shows">
-              TV-Shows
-            </Nav.Link>
             <Nav.Link id="link" href="/Supprt">
               Support
             </Nav.Link>
           </Nav>
-          <Form inline action='/Search'>
-            <FormControl
-              id="feedback"
-              type="Search"
-              placeholder="Search"
-              className="mr-sm-2"
-              onChange={this.handleChange}
-            />
-            <Nav.Link  
-               href='/Search' component={Search.setState={SearchState:this.state.searchStatement}}>
-              <Button id="link-1" varient="outline-info">Search</Button>
-            
-            </Nav.Link>
-            
-          </Form>
+
+          <Link to="/Search">
+            <Button id="link-1" varient="outline-info">
+              Search
+            </Button>
+          </Link>
         </Navbar.Collapse>
       </Navbar>
     );
